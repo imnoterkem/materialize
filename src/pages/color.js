@@ -1,14 +1,17 @@
 import React from 'react'
 
 export default function Color() {
+
+    let color=['red-text text-darken-2', 'blue-text', 'orange-text', 'green-text', 'yellow-text', 'purple-text', 
+'pink-text', 'gray-text', 'brown-text']
+
     return (
         <div>
-            Color
-            <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
-
-            <div class="card-panel">
-                <span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
-            </div>
+            <>
+            {
+                color.map(item=><div className={item}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>)
+            }
+            </>
         </div>
     )
 }
